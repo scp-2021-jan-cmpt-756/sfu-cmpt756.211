@@ -46,7 +46,7 @@ start:	showcontext
 	# The lines up to and including "metadata" are required for 756.
 	# The lines after that may or may not be necessary
 	$(GC) container clusters create $(CLUSTER_NAME) --zone $(ZONE) --num-nodes $(NUM_NODES) \
-	      --cluster-version "1.18.12-gke.1200" --release-channel "rapid" \
+	      --cluster-version "1.18.12-gke.1205" --release-channel "rapid" \
 	      --machine-type $(MACHINE_TYPE) --image-type $(IMAGE_TYPE) --disk-type $(DISK_TYPE) --disk-size $(DISK_SIZE) \
 	      --metadata disable-legacy-endpoints=true \
 	      --no-enable-basic-auth \
