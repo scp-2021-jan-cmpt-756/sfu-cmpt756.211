@@ -8,7 +8,7 @@ IMAGE_NAME=$(CREG)/scp-2021-jan-cmpt-756/gatling:$(GATLING_VER)
 DIR=../../gatling
 
 # Convert relative pathname to absolute
-ABS_DIR=$(realpath $(DIR))
+ABS_DIR="$(realpath $(DIR))"
 
 CLUSTER_IP=NONE
 USERS=1
